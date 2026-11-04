@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalco Chamber of Commerce | Directory</title>
+  <meta name="description" content="Explore local businesses and member organizations in Chalco, Estado de México through the official Chamber of Commerce business directory.">
+  <meta name="author" content="Cuitláhuac Ricardo Corona Espinoza">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Chalco Chamber of Commerce Directory">
+  <meta property="og:description" content="Browse local businesses, services, and non-profit organizations in Chalco, Estado de México.">
+  <meta property="og:image" content="https://legionrex7x77.github.io/wdd231/chamber/images/logo.png">
+  <meta property="og:url" content="https://legionrex7x77.github.io/wdd231/chamber/directory.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript Files -->
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.svg" alt="Chalco Chamber of Commerce Logo" width="50" height="50">
+      <span>Chalco Chamber of Commerce</span>
+    </div>
+    <button id="menu-button" aria-label="Toggle Navigation Menu">☰</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="directory-header">
+      <h1>Business Directory</h1>
+      <div class="view-toggle">
+        <button id="grid-view" class="active" aria-label="Grid View">Grid 📱</button>
+        <button id="list-view" aria-label="List View">List 📋</button>
+      </div>
+    </div>
+
+    <article id="members-container" class="grid-view">
+      <!-- Member cards will be dynamically injected here via directory.js -->
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h3>Chalco Chamber of Commerce</h3>
+      <p>Av. Cuauhtémoc 14, Centro, 56600 Chalco, Edo. de Méx.</p>
+      <p>info@chalcochamber.org | +52 (55) 5975-1234</p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="currentyear"></span> Chalco Chamber of Commerce</p>
+      <p>Cuitláhuac Ricardo Corona Espinoza | WDD 231</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

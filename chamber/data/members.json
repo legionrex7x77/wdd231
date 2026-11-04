@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Panadería El Rosario",
+    "address": "Av. Cuauhtémoc 14, Centro, 56600 Chalco, Edo. de Méx.",
+    "phone": "+52 (55) 5975-1234",
+    "website": "https://example.com/panaderia-rosario",
+    "image": "images/panaderia.jpeg",
+    "membershipLevel": 3,
+    "membershipName": "Gold Member",
+    "category": "Food & Bakery"
+  },
+  {
+    "name": "Ferretería y Materiales Chalco",
+    "address": "Calle San Sebastián 45, Centro, 56600 Chalco, Edo. de Méx.",
+    "phone": "+52 (55) 5975-5678",
+    "website": "https://example.com/ferreteria-chalco",
+    "image": "images/member-hardware.webp",
+    "membershipLevel": 2,
+    "membershipName": "Silver Member",
+    "category": "Construction & Hardware"
+  },
+  {
+    "name": "Clínica Médica de Oriente",
+    "address": "Calle Riva Palacio 12, San Antonio, 56600 Chalco, Edo. de Méx.",
+    "phone": "+52 (55) 5975-9012",
+    "website": "https://example.com/clinica-oriente",
+    "image": "images/member-clinic.webp",
+    "membershipLevel": 3,
+    "membershipName": "Gold Member",
+    "category": "Health & Medical"
+  },
+  {
+    "name": "Asociación Agropecuaria de Chalco",
+    "address": "Carretera Federal México-Cuautla Km 28, 56600 Chalco",
+    "phone": "+52 (55) 5975-3456",
+    "website": "https://example.com/agropecuaria-chalco",
+    "image": "images/member-agro.webp",
+    "membershipLevel": 1,
+    "membershipName": "Member",
+    "category": "Agriculture & Community"
+  },
+  {
+    "name": "Imprenta y Gráficos del Valle",
+    "address": "Av. Hidalgo 88, Centro, 56600 Chalco, Edo. de Méx.",
+    "phone": "+52 (55) 5975-7890",
+    "website": "https://example.com/imprenta-valle",
+    "image": "images/member-print.webp",
+    "membershipLevel": 2,
+    "membershipName": "Silver Member",
+    "category": "Services & Printing"
+  },
+  {
+    "name": "Café Tradicional de Chalco",
+    "address": "Portal Unión 5, Centro, 56600 Chalco, Edo. de Méx.",
+    "phone": "+52 (55) 5975-4321",
+    "website": "https://example.com/cafe-tradicional",
+    "image": "images/member-cafe.webp",
+    "membershipLevel": 3,
+    "membershipName": "Gold Member",
+    "category": "Restaurants & Cafes"
+  },
+  {
+    "name": "Soluciones Tecnológicas del Oriente",
+    "address": "Calle Reforma 22, Centro, 56600 Chalco, Edo. de Méx.",
+    "phone": "+52 (55) 5975-8899",
+    "website": "https://example.com/soluciones-tech",
+    "image": "images/member-tech.webp",
+    "membershipLevel": 2,
+    "membershipName": "Silver Member",
+    "category": "IT & Software Services"
+  }
+]
