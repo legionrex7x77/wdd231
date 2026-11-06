@@ -1,6 +1,6 @@
 :root {
   --primary-color: #0b3c5d;
-  --secondary-color: #328cc1;
+  --secondary-color: #1b5e8a; /* Color oscurecido para cumplir con el contraste WCAG AA (>= 4.5:1) */
   --accent-color: #d9b310;
   --bg-color: #f4f5f7;
   --card-bg: #ffffff;
