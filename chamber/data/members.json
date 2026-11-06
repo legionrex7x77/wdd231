@@ -14,7 +14,7 @@
     "address": "Calle San Sebastián 45, Centro, 56600 Chalco, Edo. de Méx.",
     "phone": "+52 (55) 5975-5678",
     "website": "https://example.com/ferreteria-chalco",
-    "image": "images/member-hardware.webp",
+    "image": "images/ferreteria4-chaco.jpg",
     "membershipLevel": 2,
     "membershipName": "Silver Member",
     "category": "Construction & Hardware"
@@ -24,7 +24,7 @@
     "address": "Calle Riva Palacio 12, San Antonio, 56600 Chalco, Edo. de Méx.",
     "phone": "+52 (55) 5975-9012",
     "website": "https://example.com/clinica-oriente",
-    "image": "images/member-clinic.webp",
+    "image": "images/clinica-chalco.jpg",
     "membershipLevel": 3,
     "membershipName": "Gold Member",
     "category": "Health & Medical"
@@ -34,7 +34,7 @@
     "address": "Carretera Federal México-Cuautla Km 28, 56600 Chalco",
     "phone": "+52 (55) 5975-3456",
     "website": "https://example.com/agropecuaria-chalco",
-    "image": "images/member-agro.webp",
+    "image": "images/agropecuaria.jpeg",
     "membershipLevel": 1,
     "membershipName": "Member",
     "category": "Agriculture & Community"
@@ -44,7 +44,7 @@
     "address": "Av. Hidalgo 88, Centro, 56600 Chalco, Edo. de Méx.",
     "phone": "+52 (55) 5975-7890",
     "website": "https://example.com/imprenta-valle",
-    "image": "images/member-print.webp",
+    "image": "images/15_LaImprenta.jpg",
     "membershipLevel": 2,
     "membershipName": "Silver Member",
     "category": "Services & Printing"
@@ -54,7 +54,7 @@
     "address": "Portal Unión 5, Centro, 56600 Chalco, Edo. de Méx.",
     "phone": "+52 (55) 5975-4321",
     "website": "https://example.com/cafe-tradicional",
-    "image": "images/member-cafe.webp",
+    "image": "images/cafe-chalco.jpg",
     "membershipLevel": 3,
     "membershipName": "Gold Member",
     "category": "Restaurants & Cafes"
@@ -64,7 +64,7 @@
     "address": "Calle Reforma 22, Centro, 56600 Chalco, Edo. de Méx.",
     "phone": "+52 (55) 5975-8899",
     "website": "https://example.com/soluciones-tech",
-    "image": "images/member-tech.webp",
+    "image": "images/technology-chalco.png",
     "membershipLevel": 2,
     "membershipName": "Silver Member",
     "category": "IT & Software Services"
