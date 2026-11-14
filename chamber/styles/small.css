@@ -20,7 +20,7 @@ body {
   line-height: 1.5;
 }
 
-/* Accessibility helper for screen readers / hidden headings */
+/* Accessibility helper for screen readers */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -175,7 +175,7 @@ main {
 .level-2 { background-color: #e2e3e5; color: #383d41; }
 .level-1 { background-color: #d4edda; color: #155724; }
 
-/* Hero Section (Solid background avoids WCAG false contrast warnings) */
+/* Hero Section */
 .hero {
   position: relative;
   border-radius: 8px;
