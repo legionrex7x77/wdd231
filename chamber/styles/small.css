@@ -20,6 +20,19 @@ body {
   line-height: 1.5;
 }
 
+/* Accessibility helper for screen readers / hidden headings */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 header {
   background-color: var(--primary-color);
   color: white;
@@ -162,7 +175,7 @@ main {
 .level-2 { background-color: #e2e3e5; color: #383d41; }
 .level-1 { background-color: #d4edda; color: #155724; }
 
-/* Hero Section */
+/* Hero Section (Solid background avoids WCAG false contrast warnings) */
 .hero {
   position: relative;
   border-radius: 8px;
@@ -180,29 +193,29 @@ main {
 
 .hero-box {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(11, 60, 93, 0.3), rgba(11, 60, 93, 0.85));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
   text-align: center;
-  padding: 2rem;
   color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 .hero-box h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero-box p {
-  font-size: 1.05rem;
-  margin-bottom: 1.25rem;
-  max-width: 600px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
 
 .cta-button {
@@ -303,4 +316,56 @@ main {
   margin-top: 2rem;
 }
 
-.spotlights-
+.spotlights-container > h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.spotlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.spotlight-card {
+  background: var(--card-bg);
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spotlight-card img {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-level {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.badge-gold { background-color: #fff3cd; color: #856404; }
+.badge-silver { background-color: #e2e3e5; color: #383d41; }
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
