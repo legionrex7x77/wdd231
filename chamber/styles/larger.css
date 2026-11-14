@@ -20,6 +20,19 @@
     border-radius: 4px;
   }
 
+  /* W03 Home Page Desktop Layout Adjustments */
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero img {
+    height: 450px;
+  }
+
   footer {
     flex-direction: row;
     justify-content: space-between;
