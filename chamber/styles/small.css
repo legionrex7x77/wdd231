@@ -27,7 +27,6 @@ body {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
@@ -546,7 +545,7 @@ dialog.benefit-modal ul {
 
 .summary-list dd {
   margin-bottom: 0.75rem;
-  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* Footer */
