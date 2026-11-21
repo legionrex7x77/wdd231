@@ -20,7 +20,7 @@
     border-radius: 4px;
   }
 
-  /* W03 Home Page Desktop Layout Adjustments */
+  /* W03 Home Page Desktop Layout */
   .home-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -31,6 +31,22 @@
 
   .hero img {
     height: 450px;
+  }
+
+  /* W04 Join & Thank You Desktop Layout */
+  .join-layout {
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+
+  .summary-list {
+    grid-template-columns: max-content 1fr;
+    column-gap: 1.5rem;
+    row-gap: 0.75rem;
+  }
+
+  .summary-list dd {
+    margin-bottom: 0;
   }
 
   footer {

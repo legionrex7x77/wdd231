@@ -1,4 +1,3 @@
-// Navigation menu toggle
 const menuButton = document.querySelector('#menu-button');
 const primaryNav = document.querySelector('#primary-nav');
 
@@ -9,7 +8,6 @@ if (menuButton && primaryNav) {
   });
 }
 
-// Footer dynamic dates
 const currentYearSpan = document.querySelector('#currentyear');
 const lastModifiedParagraph = document.querySelector('#lastModified');
 
