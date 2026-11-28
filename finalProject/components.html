@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalco Solar Lab | Components</title>
+  <meta name="description" content="Compare solar panels, MPPT controllers, inverters, and LiFePO4 battery hardware.">
+  <meta name="author" content="Cuitláhuac Ricardo Corona Espinoza">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/components.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">Chalco Solar Lab</a>
+      <button id="menu-button" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+      <nav id="primary-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="calculator.html">Sizing Calculator</a></li>
+          <li><a href="components.html" class="active">Components</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Off-Grid Component Reference</h1>
+
+    <div class="filter-bar" role="group" aria-label="Filter Components by Category">
+      <button type="button" class="filter-btn active" data-category="all">All</button>
+      <button type="button" class="filter-btn" data-category="panels">Panels</button>
+      <button type="button" class="filter-btn" data-category="controllers">MPPT</button>
+      <button type="button" class="filter-btn" data-category="batteries">Batteries</button>
+      <button type="button" class="filter-btn" data-category="inverters">Inverters</button>
+    </div>
+
+    <div id="components-grid" class="cards-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="currentyear"></span> Chalco Solar Lab | Cuitláhuac Ricardo Corona Espinoza</p>
+      <p id="lastModified"></p>
+      <p><a href="attributions.html">Sources & Attributions</a></p>
+    </div>
+  </footer>
+</body>
+</html>

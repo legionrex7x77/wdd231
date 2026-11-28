@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalco Solar Lab | WDD 231 Project Site Plan</title>
+  <meta name="description" content="Project site plan for Chalco Solar Lab, an off-grid solar system sizing calculator and hardware reference hub built for WDD 231.">
+  <meta name="author" content="Cuitláhuac Ricardo Corona Espinoza">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Site Plan Stylesheet -->
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="site-tag">WDD 231 • Individual Project Site Plan</p>
+      <h1>Chalco Solar Lab</h1>
+      <p class="subtitle">Off-Grid Solar System Sizing & Component Reference Hub</p>
+    </div>
+  </header>
+
+  <nav class="plan-nav" aria-label="Site Plan Sections">
+    <ul class="container">
+      <li><a href="#site-name">1. Site Name</a></li>
+      <li><a href="#site-purpose">2. Site Purpose</a></li>
+      <li><a href="#scenarios">3. Scenarios</a></li>
+      <li><a href="#color-scheme">4. Color Scheme</a></li>
+      <li><a href="#typography">5. Typography</a></li>
+      <li><a href="#wireframe">6. Wireframe</a></li>
+    </ul>
+  </nav>
+
+  <main class="container plan-content">
+    <!-- 1. Site Name -->
+    <section id="site-name" class="plan-card">
+      <h2>1. Site Name</h2>
+      <p><strong>Chalco Solar Lab</strong></p>
+      <p>
+        This name was chosen because it pairs the local setting of Chalco, Estado de México with a practical,
+        experimentation-focused identity ("Lab") centered on designing, sizing, and evaluating off-grid solar
+        power setups.
+      </p>
+      <p class="domain-note"><strong>Representative Domain:</strong> chalcosolarlab.org</p>
+    </section>
+
+    <!-- 2. Site Purpose -->
+    <section id="site-purpose" class="plan-card">
+      <h2>2. Site Purpose</h2>
+      <p>
+        Chalco Solar Lab provides practical calculation tools and structured hardware reference information to help
+        users plan off-grid solar energy systems for homes, workshops, and remote loads:
+      </p>
+      <ul>
+        <li><strong>Solar Load & Sizing Calculator:</strong> Estimates daily watt-hour (Wh) consumption, battery bank capacity (Ah/Wh), and solar array requirements from user inputs, saving recent configurations in <code>localStorage</code> and showing calculation details in a <code><dialog></code> modal.</li>
+        <li><strong>Component Reference Directory:</strong> Displays filterable equipment data from a JSON dataset comparing monocrystalline solar panels, charge controllers, inverters, and LiFePO4 battery options.</li>
+        <li><strong>Field & Setup Guides:</strong> Summarizes core sizing concepts, autonomy days, and practical wiring/maintenance considerations.</li>
+      </ul>
+    </section>
+
+    <!-- 3. Scenarios -->
+    <section id="scenarios" class="plan-card">
+      <h2>3. Target Audience Scenarios</h2>
+      <ul>
+        <li>How many watt-hours per day and how much battery capacity do I need to run essential lights, router/networking gear, and small tools during power outages?</li>
+        <li>How do monocrystalline panels, MPPT charge controllers, and LiFePO4 battery banks compare for a small off-grid setup?</li>
+        <li>How can I save and revisit my previous solar system sizing estimates in the browser without creating an account?</li>
+      </ul>
+    </section>
+
+    <!-- 4. Color Scheme -->
+    <section id="color-scheme" class="plan-card">
+      <h2>4. Color Scheme</h2>
+      <p>
+        The palette pairs deep navy and slate-teal tones inspired by technical engineering and clear skies with warm
+        amber accents evoking solar energy, all checked for high contrast against light surfaces:
+      </p>
+      <div class="swatch-grid">
+        <div class="swatch-item">
+          <span class="swatch-chip chip-primary" aria-hidden="true"></span>
+          <div>
+            <strong>Deep Navy (<code>#0f2942</code>):</strong> Header banner, primary section headings, and primary UI accents.
+          </div>
+        </div>
+        <div class="swatch-item">
+          <span class="swatch-chip chip-secondary" aria-hidden="true"></span>
+          <div>
+            <strong>Slate Teal (<code>#1e5f74</code>):</strong> Navigation bar, link highlights, and card accent borders.
+          </div>
+        </div>
+        <div class="swatch-item">
+          <span class="swatch-chip chip-accent" aria-hidden="true"></span>
+          <div>
+            <strong>Solar Amber (<code>#e09f1f</code>):</strong> Highlight badges, focus indicators, and key callout accents.
+          </div>
+        </div>
+        <div class="swatch-item">
+          <span class="swatch-chip chip-bg" aria-hidden="true"></span>
+          <div>
+            <strong>Soft Cool Gray (<code>#f4f6f8</code>) & White (<code>#ffffff</code>):</strong> Page background (<code>#f4f6f8</code>) and elevated content cards (<code>#ffffff</code>).
+          </div>
+        </div>
+        <div class="swatch-item">
+          <span class="swatch-chip chip-text" aria-hidden="true"></span>
+          <div>
+            <strong>Charcoal Ink (<code>#18222f</code>):</strong> Primary body text for high readability.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Typography -->
+    <section id="typography" class="plan-card">
+      <h2>5. Typography</h2>
+      <p>Two complementary Google Fonts are used across the site and applied on this site plan document:</p>
+      <ul>
+        <li><strong>Montserrat (sans-serif):</strong> Applied to <code>h1</code>, <code>h2</code>, and navigation/brand headings for clear visual hierarchy.</li>
+        <li><strong>Inter (sans-serif):</strong> Applied to <code>body</code>, paragraphs, lists, and code/label text for clean legibility at both mobile and desktop sizes.</li>
+      </ul>
+    </section>
+
+    <!-- 6. Wireframe -->
+    <section id="wireframe" class="plan-card">
+      <h2>6. Home Page Wireframe (Mobile & Wide Views)</h2>
+      <p>
+        Below are the planned home page layouts for mobile and wider viewports. Replace these placeholder images
+        with your own hand-drawn or sketched wireframes (following the course guideline not to use AI to generate HTML wireframes).
+      </p>
+      <div class="wireframe-grid">
+        <figure class="wireframe-box">
+          <img src="images/wireframe-mobile.png" alt="Sketch wireframe of the Chalco Solar Lab home page for mobile view" width="360" height="640">
+          <figcaption><strong>Mobile View:</strong> Stacked header/menu, hero summary + CTA, quick sizing preview, and single-column cards.</figcaption>
+        </figure>
+        <figure class="wireframe-box">
+          <img src="images/wireframe-desktop.png" alt="Sketch wireframe of the Chalco Solar Lab home page for wide desktop view" width="640" height="420">
+          <figcaption><strong>Desktop / Wide View:</strong> Horizontal navigation, wide hero banner, two-column overview/calculator block, and multi-column component cards.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Chalco Solar Lab • WDD 231 Project Site Plan</p>
+      <p>Cuitláhuac Ricardo Corona Espinoza • Chalco, Estado de México</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<!--       _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~--> The easter egg

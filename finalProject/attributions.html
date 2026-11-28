@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalco Solar Lab | Sources & Attributions</title>
+  <meta name="description" content="Media credits, technical references, and font attributions for the Chalco Solar Lab WDD 231 web project.">
+  <meta name="author" content="Cuitláhuac Ricardo Corona Espinoza">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">Chalco Solar Lab</a>
+      <button id="menu-button" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+      <nav id="primary-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="calculator.html">Sizing Calculator</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="attributions.html" class="active">Attributions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Sources & Attributions</h1>
+
+    <section class="overview-grid" aria-label="Project Attributions">
+      <article class="card">
+        <h2>Typography & CSS Reset</h2>
+        <ul class="metrics-list">
+          <li>
+            <strong>Google Fonts:</strong> <em>Montserrat</em> and <em>Inter</em> typefaces served via
+            <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>.
+          </li>
+          <li>
+            <strong>Normalize.css:</strong> Cross-browser default style normalization based on
+            <a href="https://necolas.github.io/normalize.css/" target="_blank" rel="noopener noreferrer">Normalize.css v8.0.1</a> (MIT License).
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Technical & Solar References</h2>
+        <ul class="metrics-list">
+          <li>
+            <strong>Peak Sun Hours & Irradiance Concepts:</strong> General solar resource estimation guidelines referenced from the
+            <a href="https://pvwatts.nrel.gov/" target="_blank" rel="noopener noreferrer">NREL PVWatts Calculator</a> documentation.
+          </li>
+          <li>
+            <strong>Hardware Specifications:</strong> Representative ratings and nominal voltage values compiled from standard monocrystalline PV module, MPPT charge controller, and LiFePO4 battery datasheets.
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Photography & Visual Assets</h2>
+        <ul class="metrics-list">
+          <li>
+            <strong>Hero & Equipment Images:</strong> Original setup photographs by Cuitláhuac Ricardo Corona Espinoza and royalty-free solar imagery sourced via
+            <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a> /
+            <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a> (replace or list exact photographer URLs for any stock photos used).
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="currentyear"></span> Chalco Solar Lab | Cuitláhuac Ricardo Corona Espinoza</p>
+      <p id="lastModified"></p>
+      <p><a href="attributions.html">Sources & Attributions</a></p>
+    </div>
+  </footer>
+</body>
+</html>

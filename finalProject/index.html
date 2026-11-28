@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalco Solar Lab | Off-Grid Solar Sizing & Reference</title>
+  <meta name="description" content="Off-grid solar energy sizing calculator, LiFePO4 and MPPT component reference, and field notes for Chalco Solar Lab.">
+  <meta name="author" content="Cuitláhuac Ricardo Corona Espinoza">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Chalco Solar Lab — Off-Grid Solar Sizing & Component Hub">
+  <meta property="og:description" content="Calculate daily watt-hours, battery capacity, and solar array sizing or compare off-grid hardware.">
+  <meta property="og:image" content="https://legionrex7x77.github.io/wdd231/finalproject/images/hero-solar.jpeg">
+  <meta property="og:url" content="https://legionrex7x77.github.io/wdd231/finalproject/index.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Scripts -->
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">Chalco Solar Lab</a>
+      <button id="menu-button" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+      <nav id="primary-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="calculator.html">Sizing Calculator</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero-solar.webp" alt="Off-grid monocrystalline solar array and battery setup in Chalco" width="1200" height="600">
+      <div class="hero-content">
+        <h1>Chalco Solar Lab</h1>
+        <p>Practical off-grid sizing tools, battery bank estimates, and component comparisons for reliable independent power.</p>
+        <a href="calculator.html" class="cta-button">Open Sizing Calculator</a>
+      </div>
+    </section>
+
+    <section class="overview-grid" aria-label="Core Capabilities">
+      <article class="card">
+        <h2>Daily Load & Bank Sizing</h2>
+        <p>Estimate daily watt-hours (Wh), battery capacity across autonomy days, and target solar wattage based on local peak sun hours.</p>
+        <p id="saved-setup-status" class="status-note">No saved calculation in localStorage yet.</p>
+      </article>
+
+      <article class="card">
+        <h2>Hardware Comparison</h2>
+        <p>Filter monocrystalline panels, MPPT charge controllers, hybrid inverters, and LiFePO4 battery banks loaded from JSON.</p>
+        <button id="open-formula-modal" type="button" class="secondary-btn">View Sizing Formulas</button>
+      </article>
+    </section>
+
+    <dialog id="formula-modal" class="info-modal">
+      <h2>Off-Grid Sizing Formulas</h2>
+      <ul>
+        <li><strong>Daily Load (Wh):</strong> Sum of (Device Watts × Hours per Day) for each load.</li>
+        <li><strong>Battery Capacity (Wh):</strong> (Daily Load × Autonomy Days) ÷ Depth of Discharge factor.</li>
+        <li><strong>Solar Array (W):</strong> Daily Load ÷ (Peak Sun Hours × System Efficiency factor).</li>
+      </ul>
+      <button id="close-formula-modal" type="button" class="cta-button">Close</button>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="currentyear"></span> Chalco Solar Lab | Cuitláhuac Ricardo Corona Espinoza</p>
+      <p id="lastModified"></p>
+      <p><a href="attributions.html">Sources & Attributions</a></p>
+    </div>
+  </footer>
+</body>
+</html>

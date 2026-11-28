@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalco Solar Lab | Sizing Calculator</title>
+  <meta name="description" content="Calculate daily watt-hours, LiFePO4 battery capacity, and recommended solar array wattage for off-grid setups.">
+  <meta name="author" content="Cuitláhuac Ricardo Corona Espinoza">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/calculator.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">Chalco Solar Lab</a>
+      <button id="menu-button" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+      <nav id="primary-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="calculator.html" class="active">Sizing Calculator</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Off-Grid System Sizing Calculator</h1>
+
+    <div class="calc-layout">
+      <form id="sizing-form" class="card calc-form">
+        <h2>System Parameters</h2>
+
+        <label>
+          Total Daily Load (Wh/day) *
+          <input type="number" id="daily-wh" name="dailyWh" min="50" max="50000" step="10" required placeholder="e.g., 1800">
+        </label>
+
+        <label>
+          System Voltage (V) *
+          <select id="system-voltage" name="systemVoltage" required>
+            <option value="12">12V DC</option>
+            <option value="24" selected>24V DC</option>
+            <option value="48">48V DC</option>
+          </select>
+        </label>
+
+        <label>
+          Peak Sun Hours (hours/day) *
+          <input type="number" id="peak-sun" name="peakSun" min="1" max="10" step="0.5" value="5" required>
+        </label>
+
+        <label>
+          Autonomy Days (days without sun) *
+          <input type="number" id="autonomy-days" name="autonomyDays" min="1" max="7" step="1" value="1" required>
+        </label>
+
+        <button type="submit" class="cta-button">Calculate & Save</button>
+      </form>
+
+      <section id="results-panel" class="card" aria-live="polite">
+        <h2>Estimated Requirements</h2>
+        <p id="calc-summary">Enter your daily watt-hours and click Calculate & Save.</p>
+        <ul id="calc-metrics" class="metrics-list"></ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="currentyear"></span> Chalco Solar Lab | Cuitláhuac Ricardo Corona Espinoza</p>
+      <p id="lastModified"></p>
+      <p><a href="attributions.html">Sources & Attributions</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "panel-mono-450",
+    "name": "450W Monocrystalline Panel",
+    "category": "panels",
+    "voltageSpec": "41.5V Voc",
+    "rating": "450W",
+    "notes": "High efficiency module suited for space-constrained roof or rack mounts."
+  },
+  {
+    "id": "mppt-100-50",
+    "name": "100V / 50A MPPT Controller",
+    "category": "controllers",
+    "voltageSpec": "12V / 24V / 48V Auto",
+    "rating": "50A Charge",
+    "notes": "Tracks maximum power point under shifting irradiance and cloud cover."
+  },
+  {
+    "id": "lifepo4-24-100",
+    "name": "24V 100Ah LiFePO4 Battery",
+    "category": "batteries",
+    "voltageSpec": "25.6V Nominal (2.56 kWh)",
+    "rating": "100Ah / BMS",
+    "notes": "Deep cycle lithium iron phosphate chemistry with integrated Battery Management System."
+  },
+  {
+    "id": "inverter-3000-24",
+    "name": "3000W 24V Pure Sine Inverter",
+    "category": "inverters",
+    "voltageSpec": "24V DC to 120V/240V AC",
+    "rating": "3000W Continuous",
+    "notes": "Clean sine wave output for sensitive electronics, routers, and tools."
+  }
+]
